@@ -17,5 +17,8 @@ function criaElemento(nome, quantidade) {
    const numeroItem = document.createElement('strong')
    numeroItem.innerHTML = quantidade
 
-   novoItem.innerHTML = numeroItem
+   novoItem.appendChild(numeroItem)
+   novoItem.innerHTML += nome
+
+   console.log(novoItem)
 }
